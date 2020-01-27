@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hello.Domain.Contact" table="contact">
+        <id name="contactId" column="contactId">
+
+            <generator class="assigned"></generator>
+        </id>
+        <property name="contactNume" type="java.lang.String" column="contactNume"></property>
+        <property name="contactEmail" type="java.lang.String" column="contactEmail"></property>
+        <property name="numartelefon1" type="java.lang.String" column="numartelefon1"></property>
+        <property name="numartelefon2" type="java.lang.String" column="numartelefon2"></property>
+        <property name="ziNastere" type="java.lang.String" column="ziNastere"></property>
+
+    </class>
+</hibernate-mapping>
